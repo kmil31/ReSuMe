@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <title>Kamiel's Profile</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Bungee|Cinzel|Major+Mono+Display|Inconsolata" rel="stylesheet">
+        
+
+      </head>
+    
+    <body>
+        
+        <div class="introduction">
+    
+        <h1 id="myportfolio">Hello.</h1>
+        
+        <h2 id="welcome">I am Kamiel</h2>
+            
+            <button id="learnmore">My Profile</button>
+    
+        </div>
+       
+        
+        
+        
+        
+        <div class="mainstuff">
+        
+            <h1 class="myprofile">MY PROFILE</h1>
+            
+            <div class="buttons">
+            
+            <button class="aboutbutton">About Me</button>
+                <button class="achievebutton"> My Achievements</button>
+                  <button class="contactbutton">Contact Me </button>
+            </div>
+            
+        
+            <div class="aboutme">
+            <img  style="width:50%;height:100%;float:left;background-position:right;" src="vpwave.jpg">
+           <p> My name is Muhammad Kamiel bin Samsudin. I'm a 19 year old student currently studying at IIUM Gombak. I was born in the seaside town of Kuantan, located in the great state of Pahang. My childhood was spent riding the waves and talking to fish. Now I spend my days in front of a screen, programming fish and creating a webpage to show my very handsome tutor, Brother Adis Azizan. I hope he likes it.</p>
+             </div>
+            
+            
+            
+            <div class="achievements">
+            
+                <h1>My awards :</h1>
+                <h2> a) I haven't died yet, that's an achievement</h2>
+                <h2> b) Won a lot of essay writing competitions.</h2>
+                <h2> c) Won a club sponsored robotic competition</h2>
+                <h2> d) Created a working website</h2>
+                <h2> e) Can this portfolio be considered an achievement?</h2>
+            
+            
+            </div>
+             
+            
+            
+            <div class="contact">
+            <h1 style="font-size:55px;">Please don't contact me</h1>
+                <h3>seriously don't.</h3>
+                <h4>If u must.</h4>
+                <h4>My email is cocdischarge@gmail.com</h4>
+                <h4>I will not respond.</h4>
+            </div>
+            
+            
+            
+        </div>
+        
+        
+    
+    </body>
+    
+
+
+    
+    
+    
+    
+    
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+  
+    
+  $("#learnmore").click(function() { 
+    // assumes element with id='button'
+    $(".introduction").hide();
+        $(".mainstuff").show("slow");
+        
+        
+        $(".aboutbutton").click(function(){
+            
+            
+            $(".aboutme").show("fast");
+            $(".achievements").hide();
+            $(".contact").hide();
+            
+        });
+        
+        
+           $(".achievebutton").click(function(){
+            
+            
+            $(".aboutme").hide();
+            $(".achievements").show("fast");
+            $(".contact").hide();
+            
+        });
+        
+        
+        
+           $(".contactbutton").click(function(){
+            
+            
+            $(".aboutme").hide();
+            $(".achievements").hide();
+            $(".contact").show("fast");
+            
+        });
+        
+        
+        
+    });
+    
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</html>
