@@ -1,7 +1,153 @@
 html{
-    background-image:url(vpwave.jpg);
+    background-image:url(glitch.gif);  
     background-repeat: no-repeat;
-    background-position: center;
+    background-size:100%;
     width:100%;
     height:100%;
 }
+
+#myportfolio{
+    
+    color:white;
+    font-family:Bungee;
+    text-align: center;
+   -webkit-animation:fadein 3s;
+    font-size:60px;
+    
+    
+}
+
+@keyframes fadein {
+    from {font-size:0px;}
+    to {font-size:60px;}
+}
+
+@keyframes fadeoff{
+    from {font-size:0px;}
+    to {font-size:6em;}
+    
+}
+
+@keyframes frombottom{
+    from{margin-top:100%;}
+    to{margin-top:5%;}
+}
+
+#welcome{
+    color:white;
+    font-family:Cinzel;
+    width:100%;
+    height:auto;
+    font-size:60px;
+    text-align:center;
+    -webkit-animation:fadeoff 3s;
+    animation-delay:3s;
+    animation-fill-mode:both;
+    
+}
+
+#learnmore{
+    font-family:Cinzel;
+    outline:none;
+    border:none;
+    overflow:hidden;
+    background-color:#1B1B1B;
+    color:white;
+    cursor:pointer;
+    margin-left:42%;
+    margin-top:5%;
+    font-size:3em;
+    animation:frombottom 3s;
+    animation-delay:5s;
+    animation-fill-mode:both;
+    transform:scale(1);
+    transition-duration:0.5s;
+    
+    
+}
+
+.introduction{
+    width:100%;
+    height:100%;
+}
+
+
+/* end of the first page css */
+
+
+
+.myprofile{
+    color:white;
+    font-family:Major Mono Display;
+    text-align:center
+}
+
+.mainstuff{
+    display:none;
+    width:100%;
+    height:100%;
+
+}
+
+.myprofile{
+    font-size:6em;
+    height:auto;
+}
+
+.buttons{
+    
+    width:100%;
+    margin-left:4%;
+    
+}
+
+.aboutbutton,.contactbutton,.achievebutton{
+    margin-left:10%;
+    font-family:Major Mono Display;
+    cursor:pointer;
+    border:none;
+    background-color:#1B1B1B;
+    color:white;
+    font-size:2em;
+    height:1.5em;
+    transform:scale(1);
+    transition-duration:0.5s;
+    
+}
+
+.aboutbutton:hover,.contactbutton:hover,.achievebutton:hover,#learnmore:hover{
+    
+    transform:scale(1.3);
+    transition-duration:0.5s;
+    
+}
+
+
+
+.aboutme,.achievements,.contact{
+    
+    margin-top:50px;
+    font-size:1.2em;
+    width:60%;
+    height:400px;
+    background-color:#1B1B1B;
+    font-family:Inconsolata;
+    margin-left:23%;
+    color:white;
+    display:none;
+    
+    
+    
+    
+    
+}
+
+
+.contact{
+    text-align:center;
+}
+
+.achievements{
+    padding-left:1%;
+}
+
